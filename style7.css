@@ -1,0 +1,82 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    background:url(img/wall10.jpg)
+}
+
+.container .heading{
+    font-size:5rem;
+    padding:2rem 1px;
+    text-align: center;
+    font-family:monospace;
+    font-weight: bolder;
+    font-style:initial;
+    color: black;
+}
+
+.container .music-container{
+   display:flex;
+   align-items: center;
+   flex-flow: column;
+}
+
+.container .music-container .box{
+    height:14rem;
+    width:40%;
+    display: flex;
+    align-items: center;
+    background: lightpink;
+    border-radius: 10px;
+    border-radius: 2rem;
+    overflow:-moz-hidden-unscrollable;
+    margin: 10px;
+}
+
+.container .music-container .box .image {
+    height: 100%;
+    width: 100%;
+}
+
+.container .music-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .music-container .box .music{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .music-container .box .audio{
+    width: 100%;
+    outline: none;
+}
+
+.container .music-container .box .audio::-webkit-media-controls-eclosure{
+    background: none;
+}
+
+@media (max-width:600px){
+    .container .music-container .box{
+        height: 30rem;
+        width:100%;
+        flex-flow: column;
+}
+
+.container .music-container .box .image{
+    height:100%;
+    width:100%;
+}
+.container .music-container .box .image{
+    height:100%;
+    width:100%;
+}
+]
